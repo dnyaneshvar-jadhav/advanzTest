@@ -26,6 +26,7 @@
 			 			<div class="panel-body">
 			    		<form role="form" class="frm" id="frmid">
 			    			
+			    		<input type="hidden" id="baseurl" value="{{ $URL = Request::url()}}">	
 			    		</form>
 			    	</div>
 			    	<div class="panel-footer">
@@ -41,7 +42,7 @@
 		    			<div class="row">
 			    			<div class="col-xs-3 col-sm-3 col-md-3">
 			    				<div class="form-group">
-			    					<input type="submit" value="Save" class="btn btn-info btn-block">
+			    					<input type="submit" onclick="save_q()" value="Save" class="btn btn-info btn-block">
 			    				</div>
 			    			</div>
 			    		</div>
@@ -96,4 +97,20 @@
 			$('.divToRemove').remove();
 		}
 	}
+
+
+	function save_q(){
+		var BASEURL = $('#baseurl').val();
+		$.ajax({
+			type:"post",
+			dataType :"json",
+			contentType:"application/json; charset=utf-8",
+			url:BASEURL+'/api/questions/add',
+			success:function(response){
+
+			}
+
+	})
+	}
+	
 </script>
