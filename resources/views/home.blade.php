@@ -25,20 +25,7 @@
 			 			</div>
 			 			<div class="panel-body">
 			    		<form role="form" class="frm" id="frmid">
-			    			<!-- add question -->
-			    			<!-- <div class="row"><div class="col-xs-6"><div class="form-group"><input type="test" name="ans1" class="form-control" placeholder="Enter Answer"></div><div class="form-group"><input type="test" name="ans2" class="form-control" placeholder="Enter Answer"></div><div class="form-group"><input type="test" name="ans3" class="form-control" placeholder="Enter Answer"></div><div class="form-group"><input type="test" name="ans4" class="form-control" placeholder="Enter Answer"></div></div></div> -->
-
-			    			<!-- multi line -->
-			    			<!-- <div class="row"><div class="col-xs-6"><div class="form-group"><textarea class="form-control" rows="5" id="comment"></textarea></div></div></div> -->
-
-			    			<!-- Sengle choice -->
-			    			<!-- <div class="row"><div class="col-xs-6"><div class="form-group"><input type="test" class="form-control" placeholder="Enter Answer"></div></div></div> -->
-
-			    			<!-- Multi choice -->
-			    			<!-- <div class="row"><div class="col-xs-6"><div class="form-group"><input type="test" name="ans1" class="form-control" placeholder="Enter Answer"></div><div class="form-group"><input type="test" name="ans2" class="form-control" placeholder="Enter Answer"></div><div class="form-group"><input type="test" name="ans3" class="form-control" placeholder="Enter Answer"></div><div class="form-group"><input type="test" name="ans4" class="form-control" placeholder="Enter Answer"></div></div></div> -->
-
 			    			
-
 			    		</form>
 			    	</div>
 			    	<div class="panel-footer">
@@ -69,16 +56,6 @@
 
 </html>
 <script>
-	
-
-	// function add_question(){	
-
-
-		
-	// 	//$("#frmid").append('<div class="row main_question"><div class="col-xs-6"><div class="form-group"><input type="test" name="main_q[]" class="form-control" placeholder="Enter Questions" required></div></div><div class="col-xs-6"><div class="form-group"><select class="form-control" id="q_type" onchange="get_quetion_type()"><option value="">Seletect Type</option><option value="multi_line">Multi-line text</option><option value="signle_choice">Single Choice</option><option value="multiple_choice">Multiple choice</option></select></div></div></div>');
-	// }
-
-
 	var counter = 1;
 	var counterML =1;
 	var counterSC =1;
