@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 class QuestionsController extends Controller
 {
     public function addQuestions(){
-    	dd("Hello");
+    	//dd("Hello");
+    	//code 
     }
 }
